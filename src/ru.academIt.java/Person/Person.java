@@ -1,7 +1,5 @@
 package Person;
 
-int year = Year.now().getValue();
-
 public class Person {
 	private String name;
 	private String middleName;
@@ -15,9 +13,6 @@ public class Person {
 		this.familyName = familyName;
 		this.age = age;
 		this.yearOfBirth = yearOfBirth;
-	}
-	public void yearOfBirth(int x){
-		x = year - age;
 	}
 
 	public String getName() {
@@ -54,6 +49,6 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return familyName + " " + name + " " + middleName + ", " + age + " years old.";
+		return familyName + " " + name + " " + middleName + ", born in " + yearOfBirth + ".";
 	}
 }

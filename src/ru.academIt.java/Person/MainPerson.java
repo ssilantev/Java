@@ -1,6 +1,7 @@
 package Person;
 
 import java.util.Scanner;
+import java.time.YearMonth;
 
 public class MainPerson {
 	public static void main(String[] args) {
@@ -17,6 +18,8 @@ public class MainPerson {
 
 		System.out.print("Please, type your age: ");
 		int age = Integer.parseInt(scanner.nextLine());
+
+		int yearOfBirth = YearMonth.now().getYear() - age;
 
 		Person person = new Person(name, middleName, familyName, age, yearOfBirth);
 
