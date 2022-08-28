@@ -1,7 +1,8 @@
 package Person;
 
 import java.util.Scanner;
-import java.time.YearMonth;
+
+import static Person.Person.yearOfBirth;
 
 public class MainPerson {
 	public static void main(String[] args) {
@@ -19,10 +20,8 @@ public class MainPerson {
 		System.out.print("Please, type your age: ");
 		int age = Integer.parseInt(scanner.nextLine());
 
-		int yearOfBirth = YearMonth.now().getYear() - age;
+		Person person = new Person(name, middleName, familyName, age);
 
-		Person person = new Person(name, middleName, familyName, age, yearOfBirth);
-
-		System.out.println("A new object of 'Person' class is created: " + person);
+		System.out.println("A new object of 'Person' class is created: " + person + ", born in " + yearOfBirth(age) + ".");
 	}
 }
