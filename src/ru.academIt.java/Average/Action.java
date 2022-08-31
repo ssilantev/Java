@@ -1,7 +1,5 @@
 package Average;
 
-import java.time.YearMonth;
-
 public class Action {
 	public class Range {
 		private String a;
@@ -13,10 +11,10 @@ public class Action {
 		}
 	}
 
-	public static boolean CheckInt(String a, String b) { // Сюда нужно подставить a или b, как правильно?
+	public static boolean checkInt(String a, String b) { // Сюда нужно подставить a или b, как правильно?
 		for () {
 			try {
-				int intValueA = Integer.parseInt(a);
+				int intValueA = Integer.parseInt();
 				return true;
 			} catch (NumberFormatException e) {
 				System.out.println("Incorrect data type");
@@ -25,11 +23,11 @@ public class Action {
 		}
 	}
 
-	public static int IntForm(String a,String b) { // Сюда нужно подставить a или b, как правильно?
+	public static int IntForm() { // Сюда нужно подставить a или b, как правильно?
 		int intValue = Integer.parseInt();
 		return intValue;
-		}
 	}
+}
 
 
 
@@ -62,7 +60,7 @@ public class Action {
 //		}
 //		return false;
 //	}
-}
+
 
 
 

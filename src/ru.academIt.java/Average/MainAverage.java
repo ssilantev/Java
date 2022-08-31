@@ -7,7 +7,7 @@ public class MainAverage {
 		System.out.print("Find average for all and specialy all even int numbers from a to b.\n");
 		Scanner scanner = new Scanner(System.in);
 		String a = "";
-		while (a.CheckInt(false) || (IntFormA < 2)) {
+		while ((Action.checkInt(a) = false) || (Action.IntForm(a) < 2)) {
 			System.out.print("Type a: ");
 			a = scanner.nextLine();
 			if (a.length() > 0) {
@@ -15,10 +15,10 @@ public class MainAverage {
 			}
 		}
 		String b = "";
-		while (b.CheckInt(false) || (a.IntForm >= b.IntForm)) {
+		while ((Action.checkInt(b) = false) || (Action.IntForm(a) >= Action.IntForm(b))) {
 			System.out.print("Type b: ");
-			a = scanner.nextLine();
-			if (a.length() > 0) {
+			b = scanner.nextLine();
+			if (b.length() > 0) {
 				System.out.print("b is correct.");
 			}
 		}
