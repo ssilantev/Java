@@ -11,7 +11,7 @@ public class Action {
 		}
 	}
 
-	public static boolean checkInt(String a, String b) { // Сюда нужно подставить a или b, как правильно?
+	public static boolean checkInt() { // Сюда нужно подставить a или b, как правильно?
 		for () {
 			try {
 				int intValueA = Integer.parseInt();
