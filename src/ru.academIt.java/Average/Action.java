@@ -1,31 +1,30 @@
 package Average;
 
 public class Action {
-	public class Range {
-		private String a;
-		private String b;
+//	public class Range {
+//		private String a;
+//		private String b;
+//
+//		public Range(String a, String b) {
+//			this.a = a;
+//			this.b = b;
+//		}
+//	}
 
-		public Range(String a, String b) {
-			this.a = a;
-			this.b = b;
-		}
-	}
+//	public static boolean CheckInt(String str) { // Сюда нужно подставить a или b, как правильно?
+//		for (str) {
+//			try {
+//				int intValueA = Integer.parseInt(str);
+//				return true;
+//			} catch (NumberFormatException e) {
+//				System.out.println("Incorrect data type");
+//			}
+//			return false;
+//		}
+//	}
 
-	public static boolean checkInt() { // Сюда нужно подставить a или b, как правильно?
-		for () {
-			try {
-				int intValueA = Integer.parseInt();
-				return true;
-			} catch (NumberFormatException e) {
-				System.out.println("Incorrect data type");
-			}
-			return false;
-		}
-	}
-
-	public static int IntForm() { // Сюда нужно подставить a или b, как правильно?
-		int intValue = Integer.parseInt();
-		return intValue;
+	public static int IntValue(String s) {
+		return Integer.parseInt(s);
 	}
 }
 
