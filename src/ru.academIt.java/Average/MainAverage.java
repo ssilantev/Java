@@ -15,7 +15,7 @@ public class MainAverage {
 			}
 		}
 		String b = "";
-		while ((Action.checkInt(b) = false) || (Action.IntForm(a) >= Action.IntForm(b))) {
+		while ((Action.checkInt(b) = false) || (Action.IntForm(a) <= Action.IntForm(b))) {
 			System.out.print("Type b: ");
 			b = scanner.nextLine();
 			if (b.length() > 0) {
