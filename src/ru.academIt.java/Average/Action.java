@@ -1,7 +1,7 @@
 package Average;
 
 public class Action {
-	public static boolean IfInt(String s) { // Сюда нужно подставить a или b, как правильно?
+	public static boolean ifInt(String s) { // Сюда нужно подставить a или b, как правильно?
 		try {
 			int testInt = Integer.parseInt(s);
 			return true;
@@ -11,17 +11,11 @@ public class Action {
 		return false;
 	}
 
-	public static int IntValue(String s) {
+	public static int intValue(String s) {
 		return Integer.parseInt(s);
 	}
 
-	public static double Average(int aInt, int bInt) {
-
-		System.out.print("\nThe array means are: ");
-		for (int i = aInt; i <= bInt; i++) {
-			System.out.print(i + " ");
-		}
-		System.out.println();
+	public static double average(int aInt, int bInt) {
 
 		int count = 0;
 		double sum = 0.0;
@@ -30,31 +24,20 @@ public class Action {
 			count++;
 			aInt++;
 		}
-		System.out.println("Sum = " + sum);
-		System.out.println("Total Numbers = " + count);
 		return (sum / count);
 	}
 
-	public static double AverageEven(int aInt, int bInt) {
-		System.out.print("\nThe array EVEN means are: ");
-		for (int i = aInt; i <= bInt; i++) {
-			if (i % 2 == 0) {
-				System.out.print(i + " ");
-			}
-		}
-		System.out.println();
+	public static double averageEven(int aInt, int bInt) {
 
-		int count = 0;
-		double sum = 0.0;
+		int countE = 0;
+		double sumE = 0.0;
 		while (aInt <= bInt) {
 			if (aInt % 2 == 0) {
-				sum = sum + aInt;
-				count++;
+				sumE = sumE + aInt;
+				countE++;
 			}
 			aInt++;
 		}
-		System.out.println("Sum (EVEN) = " + sum);
-		System.out.println("Total Numbers (EVEN): = " + count);
-		return (sum / count);
+		return (sumE / countE);
 	}
 }
