@@ -17,28 +17,9 @@ public class MainAverage {
 			b = scanner.nextLine();
 		}
 
-//		int aInt = Action.intValue(a);
-//		int bInt = Action.intValue(b);
-
 		System.out.println("Values received: a = " + a + ", b = " + b + ".");
 
-
-		System.out.print("\nThe array means are: ");
-		for (int i = Action.intValue(a); i <= Action.intValue(b); i++) {
-			System.out.print(i + " ");
-		}
-		System.out.println();
-
 		System.out.println("The average mean of all array members from a to b is: " + Action.average(Action.intValue(a), Action.intValue(b)) + ".");
-
-
-		System.out.print("\nThe array EVEN means are: ");
-		for (int i = Action.intValue(a); i <= Action.intValue(b); i++) {
-			if (i % 2 == 0) {
-				System.out.print(i + " ");
-			}
-		}
-		System.out.println();
 
 		System.out.println("The average mean of EVEN array members from a to b is: " + Action.averageEven(Action.intValue(a), Action.intValue(b)) + ".");
 	}

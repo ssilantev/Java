@@ -1,7 +1,7 @@
 package Average;
 
 public class Action {
-	public static boolean ifInt(String s) { // Сюда нужно подставить a или b, как правильно?
+	public static boolean ifInt(String s) {
 		try {
 			int testInt = Integer.parseInt(s);
 			return true;
