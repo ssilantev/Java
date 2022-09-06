@@ -6,7 +6,10 @@ public class MainFor {
 		for (int i = 100; i >= 1; i--) {
 			Array[i] = i;
 		}
-		For.dividedIntoFour(Array);
+		for (int j = Array.length - 1; j >= 1; j--) {
+			if (Array[j] % 4 == 0) {
+				System.out.print(Array[j] + " ");
+			}
+		}
 	}
-
 }
