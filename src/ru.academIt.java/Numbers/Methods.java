@@ -2,10 +2,8 @@ package Numbers;
 
 public class Methods {
 	public static boolean ifLong(String s) {
-//	public static boolean ifInt(String s) {
 		try {
 			long testLong = Long.parseLong(s, 10);
-//			int testInt = Integer.parseInt(s);
 			return true;
 		} catch (NumberFormatException e) {
 			System.out.println("Not int!");
