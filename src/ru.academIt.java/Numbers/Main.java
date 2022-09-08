@@ -6,7 +6,7 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		String input = "";
-		while ((input.length() == 0) || !(Methods.ifLong(input)) || (Methods.intValue(input) < 1)) {
+		while ((input.length() == 0) || !(Methods.ifInt(input)) || (Methods.intValue(input) < 1)) {
 			System.out.print("Enter natural value: ");
 			input = scanner.nextLine();
 		}
